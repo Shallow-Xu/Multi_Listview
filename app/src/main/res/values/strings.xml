@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Multi_Listview</string>
+
+
+    <string name="goods_name">商品名称</string>
+    <string name="goods_amount">商品金额</string>
+
+    <string name="order_time">订单时间</string>
+    <string name="order_id">订单编号</string>
+
+</resources>
