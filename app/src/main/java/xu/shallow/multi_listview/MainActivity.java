@@ -8,7 +8,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import java.util.Random;
 
 import xu.shallow.multi_listview.adapter.Main_Adapter;
 
@@ -36,23 +35,12 @@ public class MainActivity extends AppCompatActivity {
 				TransInfo info = new TransInfo();
 				info.setOrder_time(transInfo.getOrder_time());
 				info.setGoods_name("商品" + i + j);
-				info.setGoods_amount(random(5));
-				info.setOrder_id(random(20));
+				info.setGoods_amount(Util.random(5));
+				info.setOrder_id(Util.random(20));
 				info.setOrder_time(transInfo.getOrder_time());
 				list.add(info);
 			}
 		}
 		return list;
-	}
-
-	private String random(int len) {
-		StringBuffer rs = new StringBuffer();
-		Random random = new Random();
-		int result = 0;
-		for (int i = 0; i < len; i++) {
-			result = random.nextInt(10);
-			rs.append(result + "");
-		}
-		return rs.toString();
 	}
 }
